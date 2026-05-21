@@ -17,6 +17,9 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
+  // Menambahkan base URL agar aset dan routing terbaca dengan benar di GitHub Pages
+  base: '/DIGIRAM/', 
+
   plugins: [
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
